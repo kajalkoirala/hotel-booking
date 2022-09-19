@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <!-- attaching external link-->
+    <link href="css/contact.css" type="text/css" rel="stylesheet"/>
+    <link href="https://font.googleapies.com/css?family=Sofia" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="col100">
+              <h1 class="myheading">HOTEL BOOKING</h1>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col100">
+                <nav id="top">
+                    <ul>
+                        <li><a href="index.html">HOME</a> </li>
+                        <li><a href="registry.html">REGISTRY</a> </li>
+                        <li><a href="gallery.html">GALLERY</a> </li>
+                        <li><a href="contact.html">CONTACT</a> </li>
+                        
+                       
+                        <li><a href="account.html">CREATE ACCOUNT</a> </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <br><br><br><br>
+        
+        <div class="contact">
+            <form onsubmit="SENDEMAIL();reset();return false;">
+                <h3><b>WELCOME</b></h3>
+                <b><i>User-Name:</i></b><input type="text" id="name" placeholder="Your Name" required/>
+                <b><i>Email:</i></b><input type="email" id="email" placeholder="@gmail.com" required/>
+                <b><i>Phone number:</i></b><input type="text" id="phone" placeholder="Phone no" required/>
+
+
+                <b><i>Any queries ?</i></b><textarea id="message" row="20" placeholder="How can we help you?"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function SENDEMAIL(){
+            Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "kajalkoirala255@gmail.com",
+                    Password : "password",
+                    To : 'kajalkoirala255@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "contact form",
+                    Body : "Name:"+document.getElementById("email").value + "<br> Email:"+document.getElementById("email").value + "<br> Message:" +document.getElementById("email").value
+                }).then(
+                message => alert("message sent sucessfully")
+                );
+
+        }
+    </script>
+    </div>
+
+<footer>
+        
+    <div id="hy">
+        <div class="row">
+    <div class="col100">
+        
+        <p class="hy">Hotelbooking<br>
+            &copy; www.hb.com<br>
+            Hotel Booking, Putalisadak, kathmandu<br>
+            CONTACT:986452791
+        </p>
+        
+
+        </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

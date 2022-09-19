@@ -1,0 +1,207 @@
+/*Universal Selector*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #86827a;
+    background-image: url('../images/image.4.jpg');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+
+}
+
+#container {
+    
+    width: 1320px;
+    min-height: 1000px;
+    background-color: #cf901b;
+    margin: auto;
+    border-radius: 0px 40px 0px 80px;
+
+}
+
+.row {
+    min-height: 50px;
+    float: center;
+}
+
+.col100 {
+    width: 100%;
+
+
+}
+
+.col50 {
+    width: 50%;
+    float: left;
+
+
+
+}
+
+.col75 {
+    float: left;
+    width: 75%;
+
+}
+
+.col25 {
+    float: left;
+    width: 25%;
+
+
+}
+
+.clear {
+    clear: both;
+}
+
+.myheading {
+    font-family: "Splash", sans-serif;
+    text-align: center;
+}
+
+#top {
+    background-color: #9318b8;
+    width: 100%;
+    height: 40px;
+    text-indent: 100px;
+    text-align: right;
+}
+
+/*Decender selector*/
+#top ul {
+    list-style-type: none;
+}
+
+/*bullet hataucha*/
+
+#top ul li {
+    display: inline-block;
+    /*space haru */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#top ul li:hover {
+    background-color: #5e09f2;
+    margin: auto auto;
+
+    text-decoration: underline;
+
+}
+
+#top ul li a {
+    text-decoration: none;
+    /*underline hataucha*/
+    color: #8898dd;
+    font-size: 30 px;
+    font-weight: 900;
+    font-variant: small-caps;
+    font-stretch: condensed;
+}
+
+#top ul li a:hover {
+    text-decoration: underline;
+    /*underline haleko overline ni garna milcha*/
+    color: rgb(217, 37, 37);
+
+}
+
+#social {
+    background-color: #294598;
+    width: 75px;
+    min-height: 100px;
+    position: fixed;
+    right: 0px;
+    top: 250px;
+}
+
+/*decendent selector*/
+#social ul {
+    list-style-type: none;
+}
+
+
+#social ul li {
+    font-size: 15x;
+    margin: 10px;
+}
+
+#social ul li a {
+    color: #651544;
+    text-decoration: none;
+}
+
+#social ul li a:hover {
+    color: #3aa31f;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+.container-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    position: absolute;
+    top: 100px;
+    z-index: 999;
+    margin: auto auto;
+    width: 1320px;
+    min-height: 200px;
+    background-color: rgb(147, 135, 172);
+
+}
+
+.fixedtop {
+    position: absolute;
+    top: 20px;
+    min-height: 100px;
+    z-index: 999;
+}
+
+.bottomfixed {
+    position: fixed;
+    bottom: 0px;
+    z-index: 999;
+}
+
+@media screen and (min-width:480px)and (max-width:768px) {
+    body {
+        background-color: rgb(85, 59, 117);
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width:320px)and (max-width:480px) {
+    body {
+        background-color: #2dd059;
+    }
+
+    .container {
+
+        width: 250px;
+
+
+    }
+
+
+}
+
+
+.showhide {
+    visibility: collapse;
+}
+
+.hidden {
+    visibility: visible;
+}
